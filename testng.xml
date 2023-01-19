@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test parallel="methods" thread-count="5" name="C:/Users/91953/Desktop/testproj/ApiAutomationFrameWork">
+        <classes>
+            <class name="com.tests.ApiTest">
+                <methods>
+                    <include name="getDetails" />
+                    <include name="getDetailOfSingleEmployee" />
+                </methods>
+            </class>
+            <class name="com.tests.PostTest">
+                <methods>
+                    <include name="postDetails" />
+                    <include name="postTestUsingExternalFiles" />
+                    <include name="postTestUsingExternalFiles_singletonCheck" />
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>

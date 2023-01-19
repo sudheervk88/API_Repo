@@ -1,0 +1,29 @@
+{
+    "firstName": "Burton",
+    "lastName": "VK",
+    "id": "456",
+    "job": [
+        "QA",
+        "Trainer"
+    ],
+    "marks": [
+        {
+            "maths": 45,
+            "science": 47
+        },
+        {
+            "maths": 48,
+            "science": 46
+        }
+    ],
+    "email": "test@gmail.com",
+    "FavFood": {
+        "breakFast": "idly",
+        "lunch": "rice",
+        "dinner": [
+            "chapati",
+            "rice"
+        ]
+    },
+    "createdAt": "2023-01-19T12:35:31.889Z"
+}

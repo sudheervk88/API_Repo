@@ -1,0 +1,30 @@
+{
+  "firstName": "sudheer",
+  "lastName": "VK",
+  "id": "number",
+  "job": [
+    "QA",
+    "Trainer"
+  ],
+  "marks": [
+
+    {
+      "maths": 45,
+      "science": 47
+    },
+    {
+      "maths": 48,
+      "science": 46
+    }
+  ],
+
+  "email": "test@gmail.com",
+  "FavFood": {
+    "breakFast": "idly",
+    "lunch": "rice",
+    "dinner": [
+      "chapati",
+      "rice"
+    ]
+  }
+}
