@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="All Test Suite">
+    <listeners>
+        <listener class-name="com.listeners.TestListener"></listener>
+    </listeners>
     <test parallel="methods" thread-count="5" name="C:/Users/91953/Desktop/testproj/ApiAutomationFrameWork">
         <classes>
             <class name="com.tests.ApiTest">
