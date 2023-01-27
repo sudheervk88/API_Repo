@@ -11,11 +11,11 @@ public final class ExtentManager {
 
     private static ThreadLocal<ExtentTest> exTest = new ThreadLocal<>();
 
-    static ExtentTest getTest(){
+    public static ExtentTest getTest(){
         return exTest.get();
     }
 
-    static void setTest(ExtentTest test){
+    public static void setTest(ExtentTest test){
         exTest.set(test);
     }
 

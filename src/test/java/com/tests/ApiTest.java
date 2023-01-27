@@ -1,5 +1,6 @@
 package com.tests;
 
+import com.annotations.FrameworkAnnotations;
 import com.aventstack.extentreports.markuputils.CodeLanguage;
 import com.aventstack.extentreports.markuputils.MarkupHelper;
 import com.reports.ExtentLogger;
@@ -13,14 +14,15 @@ import org.testng.annotations.Test;
 public class ApiTest extends BaseTest {
 
     @Test
+    @FrameworkAnnotations(authorName = {"Sudheer","SVK"})
     public void getDetails(){
 
         Response response = ApiBuilders.buildRequestForGetCall().
                 get("/api/users");
 
         System.out.println(response.getStatusCode());
-
-        response.prettyPrint();
+        int cod = response.getStatusCode();
+        //response.prettyPrint();
         ExtentLogger.logResponse(response.asPrettyString());
         Assertions.
                 assertThat(response.getStatusCode()).
@@ -37,7 +39,7 @@ public class ApiTest extends BaseTest {
                 get("/api/users/{userId}");
 
         System.out.println(response.getStatusCode());
-        response.prettyPrint();
+        //response.prettyPrint();
         ExtentLogger.logResponse(response.asPrettyString());
         Assertions.
                 assertThat(response.getStatusCode()).

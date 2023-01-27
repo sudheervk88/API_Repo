@@ -36,7 +36,7 @@ public class PostTest extends BaseTest{
                             body(student).
                             post("/api/users");
 
-        ExtentLogger.logResponse(response.asPrettyString());
+     ExtentLogger.logResponse(response.prettyPrint());
 
     }
 
@@ -54,7 +54,6 @@ public class PostTest extends BaseTest{
                 post("/api/users");
 
         ExtentLogger.logResponse(response.asPrettyString());
-        response.prettyPrint();
         ApiUtils.storeResponseAsJson(FrameworkConstants.responseJsonPath+"response.json",response);
 
         Assertions.assertThat(response.getStatusCode()).isEqualTo(201);
@@ -75,7 +74,6 @@ public class PostTest extends BaseTest{
                 body(reqBody).
                 post("/api/users");
         ExtentLogger.logResponse(response.asPrettyString());
-        response.prettyPrint();
         ApiUtils.storeResponseAsJson(FrameworkConstantsSingleTon.getInstance().getResponseJsonPath()+"response.json",response);
 
         Assertions.assertThat(response.getStatusCode()).isEqualTo(201);
