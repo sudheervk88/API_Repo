@@ -1,5 +1,7 @@
 package com.annotations;
 
+import org.testng.annotations.Test;
+
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
@@ -11,6 +13,9 @@ public @interface FrameworkAnnotations {
 
     //default will make the annotation not mandatory
    String[] authorName() default "";
+   String[] category() default  "";
+
+
 
 
 

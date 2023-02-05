@@ -1,11 +1,7 @@
 package com.tests;
 
 import com.annotations.FrameworkAnnotations;
-import com.aventstack.extentreports.markuputils.CodeLanguage;
-import com.aventstack.extentreports.markuputils.MarkupHelper;
 import com.reports.ExtentLogger;
-import com.reports.ExtentManager;
-import com.reports.ExtentReport;
 import com.requestBuilder.ApiBuilders;
 import io.restassured.response.Response;
 import org.assertj.core.api.Assertions;
@@ -13,10 +9,10 @@ import org.testng.annotations.Test;
 
 public class ApiTest extends BaseTest {
 
-    @Test
-    @FrameworkAnnotations(authorName = {"Sudheer","SVK"})
-    public void getDetails(){
 
+    @Test
+    @FrameworkAnnotations(authorName = {"sudheer","SVK"},category = {"smoke","Regression"})
+    public void getDetails(){
         Response response = ApiBuilders.buildRequestForGetCall().
                 get("/api/users");
 
@@ -31,6 +27,7 @@ public class ApiTest extends BaseTest {
     }
 
     @Test
+    @FrameworkAnnotations(authorName = {"sudheer"},category = "smoke")
     public void getDetailOfSingleEmployee(){
 
         Response response = ApiBuilders.

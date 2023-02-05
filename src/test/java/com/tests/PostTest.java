@@ -1,26 +1,23 @@
 package com.tests;
 
-import com.aventstack.extentreports.markuputils.CodeLanguage;
-import com.aventstack.extentreports.markuputils.MarkupHelper;
+import com.annotations.FrameworkAnnotations;
 import com.constants.FrameworkConstants;
 import com.constants.FrameworkConstantsSingleTon;
 import com.reports.ExtentLogger;
-import com.reports.ExtentManager;
-import com.reports.ExtentReport;
-import com.student.Student;
 import com.requestBuilder.ApiBuilders;
+import com.student.Student;
 import com.utils.ApiUtils;
 import com.utils.RandomUtils;
 import io.restassured.response.Response;
+import io.restassured.specification.RequestSpecification;
 import org.assertj.core.api.Assertions;
 import org.testng.annotations.Test;
 
 import java.lang.reflect.Method;
 
 public class PostTest extends BaseTest{
-
-
     @Test
+    @FrameworkAnnotations(authorName = "SVK",category = {"smoke","Regression"})
     public void postDetails(){
 
      Student student =   Student.
@@ -31,16 +28,17 @@ public class PostTest extends BaseTest{
                             setDepartment(RandomUtils.getJob()).
                             build();
 
-     Response response = ApiBuilders.
+     RequestSpecification requestSpecification = ApiBuilders.
                             buildRequestForPostCall().
-                            body(student).
-                            post("/api/users");
-
+                            body(student);
+     ExtentLogger.logRequest(requestSpecification);
+     Response response = requestSpecification.post("/api/users");
      ExtentLogger.logResponse(response.prettyPrint());
 
     }
 
     @Test
+    @FrameworkAnnotations(authorName = "sudheer",category = "Regression")
     public void postTestUsingExternalFiles(Method method){
 
       String reqBody =  ApiUtils.
@@ -48,10 +46,11 @@ public class PostTest extends BaseTest{
                 replace("sudheer",RandomUtils.getFirstName()).
                 replace("number",String.valueOf(RandomUtils.getId()));
 
-        Response response = ApiBuilders.
+        RequestSpecification requestSpecification = ApiBuilders.
                 buildRequestForPostCall().
-                body(reqBody).
-                post("/api/users");
+                body(reqBody);
+        ExtentLogger.logRequest(requestSpecification);
+        Response response = requestSpecification.post("/api/users");
 
         ExtentLogger.logResponse(response.asPrettyString());
         ApiUtils.storeResponseAsJson(FrameworkConstants.responseJsonPath+"response.json",response);
@@ -63,16 +62,18 @@ public class PostTest extends BaseTest{
     }
 
     @Test
+    @FrameworkAnnotations(authorName = {"sudheer","SVK"},category = {"smoke","Regression"})
     public void postTestUsingExternalFiles_singletonCheck(Method method){
 
         String reqBody =  ApiUtils.readJsonAsString(FrameworkConstantsSingleTon.getInstance().requestJsonPath+"Request.json").
                 replace("sudheer",RandomUtils.getFirstName()).
                 replace("number",String.valueOf(RandomUtils.getId()));
 
-        Response response = ApiBuilders.
+        RequestSpecification requestSpecification = ApiBuilders.
                 buildRequestForPostCall().
-                body(reqBody).
-                post("/api/users");
+                body(reqBody);
+        ExtentLogger.logRequest(requestSpecification);
+        Response response = requestSpecification.post("/api/users");
         ExtentLogger.logResponse(response.asPrettyString());
         ApiUtils.storeResponseAsJson(FrameworkConstantsSingleTon.getInstance().getResponseJsonPath()+"response.json",response);
 

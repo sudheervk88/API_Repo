@@ -35,7 +35,7 @@
 <a href="#"><span class="badge badge-primary"></span></a>
 </li>
 <li class="m-r-10">
-<a href="#"><span class="badge badge-primary">Jan 22, 2023 10:38:18 PM</span></a>
+<a href="#"><span class="badge badge-primary">Feb 3, 2023 03:28:02 PM</span></a>
 </li>
 </ul>
 </div>
@@ -45,6 +45,16 @@
 <li class="nav-item dropdown" onclick="toggleView('test-view')">
 <a id="nav-test" class="dropdown-toggle" href="#">
 <span class="ico"><i class="fa fa-list"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('category-view')">
+<a id="nav-category" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-tag"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('author-view')">
+<a id="nav-author" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-user"></i></span>
 </a>
 </li>
 <li class="nav-item dropdown" onclick="toggleView('dashboard-view')">
@@ -71,161 +81,29 @@
 <a status="clear" class="dropdown-item" href="#"><span>Clear</span><span class="pull-right"><i class="fa fa-close"></i></span></a>
 </ul>
 </li>
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i></a>
+<ul id="author-toggle" class="dropdown-menu dropdown-md p-v-0">
+<a class="dropdown-item" href="#">sudheer</a><a class="dropdown-item" href="#">SVK</a><a class="dropdown-item" href="#">sudheer</a><a class="dropdown-item" href="#">sudheer</a><a class="dropdown-item" href="#">sudheer</a>
+</ul>
+</li>
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-tag"></i></a>
+<ul id="tag-toggle" class="dropdown-menu dropdown-md p-v-0">
+<a class="dropdown-item" href="#">Regression</a><a class="dropdown-item" href="#">smoke</a><a class="dropdown-item" href="#">smoke</a><a class="dropdown-item" href="#">smoke</a><a class="dropdown-item" href="#">smoke</a>
+</ul>
+</li>
 </ul>
 </div>    <div class="test-list-wrapper scrollable">
       <ul class="test-list-item">
-        <li class="test-item"  status="pass" test-id="4"
-          author=""
-          tag=""
-          device="">
-          <div class="test-detail">
-            <p class="name">postTestUsingExternalFiles_singletonCheck</p>
-            <p class="text-sm">
-              <span>22:38:19 PM</span> / <span>00:00:02:982</span>
-              <span class="badge pass-bg log float-right">Pass</span>
-            </p>
-          </div>
-          <div class="test-contents d-none">
-<div class="detail-head">
-<div class="p-v-10">
-<div class="info">
-<h5 class="test-status text-pass">postTestUsingExternalFiles_singletonCheck</h5>
-<span class='badge badge-success'>01.22.2023 22:38:19</span>
-<span class='badge badge-danger'>01.22.2023 22:38:22</span>
-<span class='badge badge-default'>00:00:02:982</span>
-&middot; <span class='uri-anchor badge badge-default'>#test-id=4</span>
-</div>
-</div>
-</div><div class="detail-body mt-4">
-<table class="table table-sm">
-  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
-  <tbody>
-      <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>10:38:21 PM</td>
-        <td>
-           <div class='json-tree' id='code-block-json-2'></div>
- <script>
-  function jsonTreeCreate2() { 
-   document.getElementById('code-block-json-2').innerHTML = JSONTree.create({
-    "firstName": "Laurene",
-    "lastName": "VK",
-    "id": "308",
-    "job": [
-        "QA",
-        "Trainer"
-    ],
-    "marks": [
-        {
-            "maths": 45,
-            "science": 47
-        },
-        {
-            "maths": 48,
-            "science": 46
-        }
-    ],
-    "email": "test@gmail.com",
-    "FavFood": {
-        "breakFast": "idly",
-        "lunch": "rice",
-        "dinner": [
-            "chapati",
-            "rice"
-        ]
-    },
-    "createdAt": "2023-01-22T17:08:21.525Z"
-}); 
-  }
-  jsonTreeCreate2();
- </script>
-
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>10:38:22 PM</td>
-        <td>
-          null is Passed
-        </td>
-      </tr>
-  </tbody>
-</table>
-</div>
-          </div>
-        </li>
         <li class="test-item"  status="pass" test-id="1"
-          author=""
-          tag=""
-          device="">
-          <div class="test-detail">
-            <p class="name">getDetailOfSingleEmployee</p>
-            <p class="text-sm">
-              <span>22:38:19 PM</span> / <span>00:00:02:334</span>
-              <span class="badge pass-bg log float-right">Pass</span>
-            </p>
-          </div>
-          <div class="test-contents d-none">
-<div class="detail-head">
-<div class="p-v-10">
-<div class="info">
-<h5 class="test-status text-pass">getDetailOfSingleEmployee</h5>
-<span class='badge badge-success'>01.22.2023 22:38:19</span>
-<span class='badge badge-danger'>01.22.2023 22:38:21</span>
-<span class='badge badge-default'>00:00:02:334</span>
-&middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
-</div>
-</div>
-</div><div class="detail-body mt-4">
-<table class="table table-sm">
-  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
-  <tbody>
-      <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>10:38:21 PM</td>
-        <td>
-           <div class='json-tree' id='code-block-json-1'></div>
- <script>
-  function jsonTreeCreate1() { 
-   document.getElementById('code-block-json-1').innerHTML = JSONTree.create({
-    "data": {
-        "id": 2,
-        "email": "janet.weaver@reqres.in",
-        "first_name": "Janet",
-        "last_name": "Weaver",
-        "avatar": "https://reqres.in/img/faces/2-image.jpg"
-    },
-    "support": {
-        "url": "https://reqres.in/#support-heading",
-        "text": "To keep ReqRes free, contributions towards server costs are appreciated!"
-    }
-}); 
-  }
-  jsonTreeCreate1();
- </script>
-
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>10:38:21 PM</td>
-        <td>
-          null is Passed
-        </td>
-      </tr>
-  </tbody>
-</table>
-</div>
-          </div>
-        </li>
-        <li class="test-item"  status="pass" test-id="3"
-          author=""
-          tag=""
+          author="SVK"
+          tag="Regression smoke"
           device="">
           <div class="test-detail">
             <p class="name">postDetails</p>
             <p class="text-sm">
-              <span>22:38:19 PM</span> / <span>00:00:02:355</span>
+              <span>15:28:02 PM</span> / <span>00:00:02:443</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -234,41 +112,77 @@
 <div class="p-v-10">
 <div class="info">
 <h5 class="test-status text-pass">postDetails</h5>
-<span class='badge badge-success'>01.22.2023 22:38:19</span>
-<span class='badge badge-danger'>01.22.2023 22:38:21</span>
-<span class='badge badge-default'>00:00:02:355</span>
-&middot; <span class='uri-anchor badge badge-default'>#test-id=3</span>
+<span class='badge badge-success'>02.03.2023 15:28:02</span>
+<span class='badge badge-danger'>02.03.2023 15:28:05</span>
+<span class='badge badge-default'>00:00:02:443</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
 </div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">SVK</span>
+<span class="badge badge-pill badge-default">Regression</span>
+<span class="badge badge-pill badge-default">smoke</span></div>
 </div>
 </div><div class="detail-body mt-4">
 <table class="table table-sm">
   <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
   <tbody>
       <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>10:38:21 PM</td>
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:28:04 PM</td>
         <td>
-           <div class='json-tree' id='code-block-json-3'></div>
+          Request Body....
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:28:04 PM</td>
+        <td>
+           <div class='json-tree' id='code-block-json-2'></div>
  <script>
-  function jsonTreeCreate3() { 
-   document.getElementById('code-block-json-3').innerHTML = JSONTree.create({
-    "id": 206,
-    "studentName": "Norberto",
-    "lastName": "Lindgren",
-    "department": "Sales",
-    "createdAt": "2023-01-22T17:08:21.550Z"
+  function jsonTreeCreate2() { 
+   document.getElementById('code-block-json-2').innerHTML = JSONTree.create({"id":107,"studentName":"Oren","lastName":"Koss","department":"Retail"}); 
+  }
+  jsonTreeCreate2();
+ </script>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:28:04 PM</td>
+        <td>
+          <div class='row'>
+ <div class='col-md-12'>
+  <textarea readonly class='code-block'>Content-Type=application/json</textarea>
+ </div>
+</div>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>3:28:05 PM</td>
+        <td>
+           <div class='json-tree' id='code-block-json-5'></div>
+ <script>
+  function jsonTreeCreate5() { 
+   document.getElementById('code-block-json-5').innerHTML = JSONTree.create({
+    "id": 107,
+    "studentName": "Oren",
+    "lastName": "Koss",
+    "department": "Retail",
+    "createdAt": "2023-02-03T09:58:05.051Z"
 }); 
   }
-  jsonTreeCreate3();
+  jsonTreeCreate5();
  </script>
 
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log pass-bg">Pass</span></td>
-        <td>10:38:21 PM</td>
+        <td>3:28:05 PM</td>
         <td>
-          null is Passed
+          postDetails is Passed
         </td>
       </tr>
   </tbody>
@@ -277,93 +191,13 @@
           </div>
         </li>
         <li class="test-item"  status="pass" test-id="5"
-          author=""
-          tag=""
-          device="">
-          <div class="test-detail">
-            <p class="name">postTestUsingExternalFiles</p>
-            <p class="text-sm">
-              <span>22:38:19 PM</span> / <span>00:00:03:384</span>
-              <span class="badge pass-bg log float-right">Pass</span>
-            </p>
-          </div>
-          <div class="test-contents d-none">
-<div class="detail-head">
-<div class="p-v-10">
-<div class="info">
-<h5 class="test-status text-pass">postTestUsingExternalFiles</h5>
-<span class='badge badge-success'>01.22.2023 22:38:19</span>
-<span class='badge badge-danger'>01.22.2023 22:38:22</span>
-<span class='badge badge-default'>00:00:03:384</span>
-&middot; <span class='uri-anchor badge badge-default'>#test-id=5</span>
-</div>
-</div>
-</div><div class="detail-body mt-4">
-<table class="table table-sm">
-  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
-  <tbody>
-      <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>10:38:22 PM</td>
-        <td>
-           <div class='json-tree' id='code-block-json-4'></div>
- <script>
-  function jsonTreeCreate4() { 
-   document.getElementById('code-block-json-4').innerHTML = JSONTree.create({
-    "firstName": "Pierre",
-    "lastName": "VK",
-    "id": "80",
-    "job": [
-        "QA",
-        "Trainer"
-    ],
-    "marks": [
-        {
-            "maths": 45,
-            "science": 47
-        },
-        {
-            "maths": 48,
-            "science": 46
-        }
-    ],
-    "email": "test@gmail.com",
-    "FavFood": {
-        "breakFast": "idly",
-        "lunch": "rice",
-        "dinner": [
-            "chapati",
-            "rice"
-        ]
-    },
-    "createdAt": "2023-01-22T17:08:22.516Z"
-}); 
-  }
-  jsonTreeCreate4();
- </script>
-
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>10:38:22 PM</td>
-        <td>
-          null is Passed
-        </td>
-      </tr>
-  </tbody>
-</table>
-</div>
-          </div>
-        </li>
-        <li class="test-item"  status="pass" test-id="2"
-          author=""
-          tag=""
+          author="sudheer SVK"
+          tag="Regression smoke"
           device="">
           <div class="test-detail">
             <p class="name">getDetails</p>
             <p class="text-sm">
-              <span>22:38:19 PM</span> / <span>00:00:02:334</span>
+              <span>15:28:02 PM</span> / <span>00:00:02:282</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -372,11 +206,15 @@
 <div class="p-v-10">
 <div class="info">
 <h5 class="test-status text-pass">getDetails</h5>
-<span class='badge badge-success'>01.22.2023 22:38:19</span>
-<span class='badge badge-danger'>01.22.2023 22:38:21</span>
-<span class='badge badge-default'>00:00:02:334</span>
-&middot; <span class='uri-anchor badge badge-default'>#test-id=2</span>
+<span class='badge badge-success'>02.03.2023 15:28:02</span>
+<span class='badge badge-danger'>02.03.2023 15:28:04</span>
+<span class='badge badge-default'>00:00:02:282</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=5</span>
 </div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">sudheer</span>
+<span class="badge badge-pill badge-default">SVK</span>
+<span class="badge badge-pill badge-default">Regression</span>
+<span class="badge badge-pill badge-default">smoke</span></div>
 </div>
 </div><div class="detail-body mt-4">
 <table class="table table-sm">
@@ -384,12 +222,12 @@
   <tbody>
       <tr class="event-row">
         <td><span class="badge log pass-bg">Pass</span></td>
-        <td>10:38:21 PM</td>
+        <td>3:28:04 PM</td>
         <td>
-           <div class='json-tree' id='code-block-json-0'></div>
+           <div class='json-tree' id='code-block-json-3'></div>
  <script>
-  function jsonTreeCreate0() { 
-   document.getElementById('code-block-json-0').innerHTML = JSONTree.create({
+  function jsonTreeCreate3() { 
+   document.getElementById('code-block-json-3').innerHTML = JSONTree.create({
     "page": 1,
     "per_page": 6,
     "total": 12,
@@ -444,16 +282,372 @@
     }
 }); 
   }
-  jsonTreeCreate0();
+  jsonTreeCreate3();
  </script>
 
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log pass-bg">Pass</span></td>
-        <td>10:38:21 PM</td>
+        <td>3:28:04 PM</td>
         <td>
-          null is Passed
+          getDetails is Passed
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="3"
+          author="sudheer"
+          tag="Regression"
+          device="">
+          <div class="test-detail">
+            <p class="name">postTestUsingExternalFiles</p>
+            <p class="text-sm">
+              <span>15:28:02 PM</span> / <span>00:00:03:153</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">postTestUsingExternalFiles</h5>
+<span class='badge badge-success'>02.03.2023 15:28:02</span>
+<span class='badge badge-danger'>02.03.2023 15:28:05</span>
+<span class='badge badge-default'>00:00:03:153</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=3</span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">sudheer</span>
+<span class="badge badge-pill badge-default">Regression</span></div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:28:03 PM</td>
+        <td>
+          Request Body....
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:28:03 PM</td>
+        <td>
+           <div class='json-tree' id='code-block-json-0'></div>
+ <script>
+  function jsonTreeCreate0() { 
+   document.getElementById('code-block-json-0').innerHTML = JSONTree.create({
+  "firstName": "Marlon",
+  "lastName": "VK",
+  "id": "315",
+  "job": [
+    "QA",
+    "Trainer"
+  ],
+  "marks": [
+
+    {
+      "maths": 45,
+      "science": 47
+    },
+    {
+      "maths": 48,
+      "science": 46
+    }
+  ],
+
+  "email": "test@gmail.com",
+  "FavFood": {
+    "breakFast": "idly",
+    "lunch": "rice",
+    "dinner": [
+      "chapati",
+      "rice"
+    ]
+  }
+}); 
+  }
+  jsonTreeCreate0();
+ </script>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:28:03 PM</td>
+        <td>
+          <div class='row'>
+ <div class='col-md-12'>
+  <textarea readonly class='code-block'>Content-Type=application/json</textarea>
+ </div>
+</div>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>3:28:05 PM</td>
+        <td>
+           <div class='json-tree' id='code-block-json-4'></div>
+ <script>
+  function jsonTreeCreate4() { 
+   document.getElementById('code-block-json-4').innerHTML = JSONTree.create({
+    "firstName": "Marlon",
+    "lastName": "VK",
+    "id": "315",
+    "job": [
+        "QA",
+        "Trainer"
+    ],
+    "marks": [
+        {
+            "maths": 45,
+            "science": 47
+        },
+        {
+            "maths": 48,
+            "science": 46
+        }
+    ],
+    "email": "test@gmail.com",
+    "FavFood": {
+        "breakFast": "idly",
+        "lunch": "rice",
+        "dinner": [
+            "chapati",
+            "rice"
+        ]
+    },
+    "createdAt": "2023-02-03T09:58:05.050Z"
+}); 
+  }
+  jsonTreeCreate4();
+ </script>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>3:28:05 PM</td>
+        <td>
+          postTestUsingExternalFiles is Passed
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="2"
+          author="sudheer"
+          tag="smoke"
+          device="">
+          <div class="test-detail">
+            <p class="name">getDetailOfSingleEmployee</p>
+            <p class="text-sm">
+              <span>15:28:02 PM</span> / <span>00:00:02:885</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">getDetailOfSingleEmployee</h5>
+<span class='badge badge-success'>02.03.2023 15:28:02</span>
+<span class='badge badge-danger'>02.03.2023 15:28:05</span>
+<span class='badge badge-default'>00:00:02:885</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=2</span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">sudheer</span>
+<span class="badge badge-pill badge-default">smoke</span></div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>3:28:05 PM</td>
+        <td>
+           <div class='json-tree' id='code-block-json-7'></div>
+ <script>
+  function jsonTreeCreate7() { 
+   document.getElementById('code-block-json-7').innerHTML = JSONTree.create({
+    "data": {
+        "id": 2,
+        "email": "janet.weaver@reqres.in",
+        "first_name": "Janet",
+        "last_name": "Weaver",
+        "avatar": "https://reqres.in/img/faces/2-image.jpg"
+    },
+    "support": {
+        "url": "https://reqres.in/#support-heading",
+        "text": "To keep ReqRes free, contributions towards server costs are appreciated!"
+    }
+}); 
+  }
+  jsonTreeCreate7();
+ </script>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>3:28:05 PM</td>
+        <td>
+          getDetailOfSingleEmployee is Passed
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="4"
+          author="sudheer SVK"
+          tag="Regression smoke"
+          device="">
+          <div class="test-detail">
+            <p class="name">postTestUsingExternalFiles_singletonCheck</p>
+            <p class="text-sm">
+              <span>15:28:02 PM</span> / <span>00:00:03:153</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">postTestUsingExternalFiles_singletonCheck</h5>
+<span class='badge badge-success'>02.03.2023 15:28:02</span>
+<span class='badge badge-danger'>02.03.2023 15:28:05</span>
+<span class='badge badge-default'>00:00:03:153</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=4</span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">sudheer</span>
+<span class="badge badge-pill badge-default">SVK</span>
+<span class="badge badge-pill badge-default">Regression</span>
+<span class="badge badge-pill badge-default">smoke</span></div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:28:03 PM</td>
+        <td>
+          Request Body....
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:28:03 PM</td>
+        <td>
+           <div class='json-tree' id='code-block-json-1'></div>
+ <script>
+  function jsonTreeCreate1() { 
+   document.getElementById('code-block-json-1').innerHTML = JSONTree.create({
+  "firstName": "Daniela",
+  "lastName": "VK",
+  "id": "201",
+  "job": [
+    "QA",
+    "Trainer"
+  ],
+  "marks": [
+
+    {
+      "maths": 45,
+      "science": 47
+    },
+    {
+      "maths": 48,
+      "science": 46
+    }
+  ],
+
+  "email": "test@gmail.com",
+  "FavFood": {
+    "breakFast": "idly",
+    "lunch": "rice",
+    "dinner": [
+      "chapati",
+      "rice"
+    ]
+  }
+}); 
+  }
+  jsonTreeCreate1();
+ </script>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:28:03 PM</td>
+        <td>
+          <div class='row'>
+ <div class='col-md-12'>
+  <textarea readonly class='code-block'>Content-Type=application/json</textarea>
+ </div>
+</div>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>3:28:05 PM</td>
+        <td>
+           <div class='json-tree' id='code-block-json-6'></div>
+ <script>
+  function jsonTreeCreate6() { 
+   document.getElementById('code-block-json-6').innerHTML = JSONTree.create({
+    "firstName": "Daniela",
+    "lastName": "VK",
+    "id": "201",
+    "job": [
+        "QA",
+        "Trainer"
+    ],
+    "marks": [
+        {
+            "maths": 45,
+            "science": 47
+        },
+        {
+            "maths": 48,
+            "science": 46
+        }
+    ],
+    "email": "test@gmail.com",
+    "FavFood": {
+        "breakFast": "idly",
+        "lunch": "rice",
+        "dinner": [
+            "chapati",
+            "rice"
+        ]
+    },
+    "createdAt": "2023-02-03T09:58:05.058Z"
+}); 
+  }
+  jsonTreeCreate6();
+ </script>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>3:28:05 PM</td>
+        <td>
+          postTestUsingExternalFiles_singletonCheck is Passed
         </td>
       </tr>
   </tbody>
@@ -470,18 +664,415 @@
 </div>
 <div class="test-content-detail"><div class="detail-body"></div></div>
 </div></div>
-<div class="container-fluid p-4 view dashboard-view">
+<div class="test-wrapper row view category-view attributes-view">
+<div class="test-list">
+<div class="test-list-tools">
+<ul class="tools pull-left"><li><a href=""><span class="font-size-14">Category</span></a></li></ul>
+<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">5</span></a></li></ul>
+</div>
+<div class="test-list-wrapper scrollable">
+<ul class="test-list-item">
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>4</span>
+</span>
+<p class="name">Regression</p>
+<p class="duration text-sm">4 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>Regression</h4>
+<span status="pass" class='badge log pass-bg'>4 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>15:28:02 PM</td>
+<td>
+<a href="#" class="linked" test-id='3' id='3'>postTestUsingExternalFiles</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>15:28:02 PM</td>
+<td>
+<a href="#" class="linked" test-id='5' id='5'>getDetails</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>15:28:02 PM</td>
+<td>
+<a href="#" class="linked" test-id='4' id='4'>postTestUsingExternalFiles_singletonCheck</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>15:28:02 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='1'>postDetails</a>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">smoke</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>smoke</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>15:28:02 PM</td>
+<td>
+<a href="#" class="linked" test-id='2' id='2'>getDetailOfSingleEmployee</a>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">smoke</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>smoke</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>15:28:02 PM</td>
+<td>
+<a href="#" class="linked" test-id='5' id='5'>getDetails</a>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">smoke</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>smoke</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>15:28:02 PM</td>
+<td>
+<a href="#" class="linked" test-id='4' id='4'>postTestUsingExternalFiles_singletonCheck</a>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">smoke</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>smoke</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>15:28:02 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='1'>postDetails</a>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="test-content scrollable">
+<div class="test-content-detail">
+<div class="detail-body"></div>
+</div>
+</div>
+</div><div class="test-wrapper row view author-view attributes-view">
+<div class="test-list">
+<div class="test-list-tools">
+<ul class="tools pull-left"><li><a href=""><span class="font-size-14">Author</span></a></li></ul>
+<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">5</span></a></li></ul>
+</div>
+<div class="test-list-wrapper scrollable">
+<ul class="test-list-item">
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">sudheer</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>sudheer</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>15:28:02 PM</td>
+<td>
+<a href="#" class="linked" test-id='5' id='5'>getDetails</a>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>3</span>
+</span>
+<p class="name">SVK</p>
+<p class="duration text-sm">3 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>SVK</h4>
+<span status="pass" class='badge log pass-bg'>3 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>15:28:02 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='1'>postDetails</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>15:28:02 PM</td>
+<td>
+<a href="#" class="linked" test-id='5' id='5'>getDetails</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>15:28:02 PM</td>
+<td>
+<a href="#" class="linked" test-id='4' id='4'>postTestUsingExternalFiles_singletonCheck</a>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">sudheer</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>sudheer</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>15:28:02 PM</td>
+<td>
+<a href="#" class="linked" test-id='3' id='3'>postTestUsingExternalFiles</a>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">sudheer</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>sudheer</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>15:28:02 PM</td>
+<td>
+<a href="#" class="linked" test-id='2' id='2'>getDetailOfSingleEmployee</a>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">sudheer</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>sudheer</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>15:28:02 PM</td>
+<td>
+<a href="#" class="linked" test-id='4' id='4'>postTestUsingExternalFiles_singletonCheck</a>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="test-content scrollable">
+<div class="test-content-detail">
+<div class="detail-body"></div>
+</div>
+</div>
+</div><div class="container-fluid p-4 view dashboard-view">
 <div class="row">
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Started</p>
-<h3>Jan 22, 2023 10:38:18 PM</h3>
+<h3>Feb 3, 2023 03:28:02 PM</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Ended</p>
-<h3>Jan 22, 2023 10:38:22 PM</h3>
+<h3>Feb 3, 2023 03:28:05 PM</h3>
 </div></div>
 </div>
 <div class="col-md-3">
@@ -532,10 +1123,10 @@
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='100%'><b>10</b> events passed</small></div>
+<div><small data-tooltip='52%'><b>10</b> events passed</small></div>
 <div>
 <small data-tooltip='0%'><b>0</b> events failed,
-<b data-tooltip='%'>0</b> others
+<b data-tooltip='%'>9</b> others
 </small>
 </div>
 </div>
@@ -551,10 +1142,109 @@
 </div></div>
 <script>
 var timeline = {
-"postTestUsingExternalFiles_singletonCheck":2.982,"getDetailOfSingleEmployee":2.334,"postDetails":2.355,"postTestUsingExternalFiles":3.384,"getDetails":2.334
+"postDetails":2.443,"getDetails":2.282,"postTestUsingExternalFiles":3.153,"getDetailOfSingleEmployee":2.885,"postTestUsingExternalFiles_singletonCheck":3.153
 };
 </script>
 <div class="row">
+<div class="col-md-4 author-container">
+<div class="card">
+<div class="card-header"><p>Author</p></div>
+<div class="card-body pb-0 pt-0"><table class="table table-sm table-bordered">
+<thead><tr class="bg-gray"><th>Name</th><th>Passed</th><th>Failed</th><th>Skipped</th><th>Others</th><th>Passed %</th></tr></thead>
+<tbody>
+<tr>
+<td>sudheer</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>SVK</td>
+<td>3</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>sudheer</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>sudheer</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>sudheer</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<div class="col-md-4 category-container">
+<div class="card">
+<div class="card-header"><p>Tags</p></div>
+<div class="card-body pb-0 pt-0"><table class="table table-sm table-bordered">
+<thead><tr class="bg-gray"><th>Name</th><th>Passed</th><th>Failed</th><th>Skipped</th><th>Others</th><th>Passed %</th></tr></thead><tbody>
+<tr>
+<td>Regression</td>
+<td>4</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>smoke</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>smoke</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>smoke</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>smoke</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
 </div>
 </div>
 <script>
@@ -581,7 +1271,7 @@ passEvents: 10,
 failEvents: 0,
 warningEvents: 0,
 skipEvents: 0,
-infoEvents: 0
+infoEvents: 9
 };
 </script>        </div>
       </div>
