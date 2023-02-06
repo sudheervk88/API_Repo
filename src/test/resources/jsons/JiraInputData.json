@@ -1,0 +1,14 @@
+{
+  "fields": {
+    "project":
+    {
+      "key": "KEY"
+    },
+
+    "summary": "SUMMERY",
+    "description": "DESCRIPTION",
+    "issuetype": {
+      "name": "Bug"
+    }
+  }
+}
