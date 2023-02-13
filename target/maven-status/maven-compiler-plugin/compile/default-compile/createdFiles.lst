@@ -1,0 +1,16 @@
+com\student\Student.class
+com\utils\PropertyUtils.class
+com\annotations\FrameworkAnnotations.class
+com\utils\RandomUtils.class
+com\reports\ExtentManager.class
+com\student\Student$StudentBuilder.class
+com\enums\PropertyType.class
+com\utils\ApiUtils.class
+com\reports\ExtentReport.class
+com\listeners\TestListener.class
+com\utils\JiraUtils.class
+com\constants\FrameworkConstants.class
+com\utils\FakerUtils.class
+com\reports\ExtentLogger.class
+com\requestBuilder\ApiBuilders.class
+com\constants\FrameworkConstantsSingleTon.class

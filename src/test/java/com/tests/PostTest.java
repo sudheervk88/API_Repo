@@ -65,7 +65,7 @@ public class PostTest extends BaseTest{
     @FrameworkAnnotations(authorName = {"sudheer","SVK"},category = {"smoke","Regression"})
     public void postTestUsingExternalFiles_singletonCheck(Method method){
 
-        String reqBody =  ApiUtils.readJsonAsString(FrameworkConstantsSingleTon.getInstance().requestJsonPath+"Request.json").
+        String reqBody =  ApiUtils.readJsonAsString(FrameworkConstants.requestJsonPath+"Request.json").
                 replace("sudheer",RandomUtils.getFirstName()).
                 replace("number",String.valueOf(RandomUtils.getId()));
 
@@ -75,7 +75,7 @@ public class PostTest extends BaseTest{
         ExtentLogger.logRequest(requestSpecification);
         Response response = requestSpecification.post("/api/users");
         ExtentLogger.logResponse(response.asPrettyString());
-        ApiUtils.storeResponseAsJson(FrameworkConstantsSingleTon.getInstance().getResponseJsonPath()+"response.json",response);
+        ApiUtils.storeResponseAsJson(FrameworkConstants.responseJsonPath+"response.json",response);
 
         Assertions.assertThat(response.getStatusCode()).isEqualTo(201);
         Assertions.assertThat(response.jsonPath().getString("FavFood.lunch")).isEqualTo("rice");

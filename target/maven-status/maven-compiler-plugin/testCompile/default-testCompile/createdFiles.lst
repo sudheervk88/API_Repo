@@ -1,0 +1,5 @@
+com\tests\ApiTest.class
+com\tests\BaseTest.class
+AuthDemo.class
+com\tests\DataProviderTest.class
+com\tests\PostTest.class

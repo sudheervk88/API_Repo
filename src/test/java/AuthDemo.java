@@ -77,6 +77,8 @@ public class AuthDemo {
                                    log().
                                    all();
      Response response = req.post("http://localhost:8080/rest/api/2/issue/");
+    String key = response.jsonPath().getString("key");
+    System.out.println("Key:::"+key);
      response.prettyPrint();
 
 

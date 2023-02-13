@@ -28,7 +28,6 @@ public final class ExtentLogger {
     public static void logResponse(String message){
         ExtentManager.getTest().pass(MarkupHelper.createCodeBlock(message, CodeLanguage.JSON));
     }
-
     //This is to log the request body into extent report
     public static void logRequest(RequestSpecification requestSpecification){
         QueryableRequestSpecification queryableRequestSpecification = SpecificationQuerier.query(requestSpecification);

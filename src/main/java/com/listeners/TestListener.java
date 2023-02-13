@@ -40,7 +40,7 @@ public class TestListener implements ITestListener, ISuiteListener {
     public void onTestFailure(ITestResult result) {
         ExtentLogger.fail(String.valueOf(result.getThrowable()));
         String issueInJira = JiraUtils.createIssueInJira(String.valueOf(result.getThrowable()));
-        ExtentLogger.fail("Issue created in Jira"+"http://localhost:8080/browse/"+issueInJira);
+        ExtentLogger.fail("Issue created in Jira"+"::::"+"http://localhost:8080/browse/"+issueInJira);
 
     }
 
