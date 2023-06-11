@@ -5,8 +5,10 @@ com\utils\RandomUtils.class
 com\reports\ExtentManager.class
 com\student\Student$StudentBuilder.class
 com\enums\PropertyType.class
+com\utils\StringUtils.class
 com\utils\ApiUtils.class
 com\reports\ExtentReport.class
+com\annotations\ApiTest.class
 com\listeners\TestListener.class
 com\utils\JiraUtils.class
 com\constants\FrameworkConstants.class

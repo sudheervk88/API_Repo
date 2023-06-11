@@ -18,8 +18,8 @@ public class ApiTest extends BaseTest {
 
         System.out.println(response.getStatusCode());
         int cod = response.getStatusCode();
-        //response.prettyPrint();
-        ExtentLogger.logResponse(response.asPrettyString());
+        response.prettyPrint();
+        //ExtentLogger.logResponse(response.asPrettyString());
         Assertions.
                 assertThat(response.getStatusCode()).
                 isEqualTo(200).isPositive();
@@ -40,7 +40,7 @@ public class ApiTest extends BaseTest {
         ExtentLogger.logResponse(response.asPrettyString());
         Assertions.
                 assertThat(response.getStatusCode()).
-                isEqualTo(200).isPositive();
+                isEqualTo(201).isPositive();
 
     }
 

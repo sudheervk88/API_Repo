@@ -1,5 +1,7 @@
 package com.annotations;
 
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.Test;
 
 import java.lang.annotation.ElementType;
@@ -14,7 +16,6 @@ public @interface FrameworkAnnotations {
     //default will make the annotation not mandatory
    String[] authorName() default "";
    String[] category() default  "";
-
 
 
 

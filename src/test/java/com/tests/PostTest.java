@@ -39,12 +39,12 @@ public class PostTest extends BaseTest{
 
     @Test
     @FrameworkAnnotations(authorName = "sudheer",category = "Regression")
-    public void postTestUsingExternalFiles(Method method){
+    public void postTestUsingExternalFiles(Method method) {
 
-      String reqBody =  ApiUtils.
-                readJsonAsString(FrameworkConstants.requestJsonPath+"Request.json").
-                replace("sudheer",RandomUtils.getFirstName()).
-                replace("number",String.valueOf(RandomUtils.getId()));
+        String reqBody = ApiUtils.
+                readJsonAsString(FrameworkConstants.requestJsonPath + "Request.json").
+                replace("sudheer", RandomUtils.getFirstName()).
+                replace("number", String.valueOf(RandomUtils.getId()));
 
         RequestSpecification requestSpecification = ApiBuilders.
                 buildRequestForPostCall().
@@ -52,14 +52,16 @@ public class PostTest extends BaseTest{
         ExtentLogger.logRequest(requestSpecification);
         Response response = requestSpecification.post("/api/users");
 
+
         ExtentLogger.logResponse(response.asPrettyString());
-        ApiUtils.storeResponseAsJson(FrameworkConstants.responseJsonPath+"response.json",response);
+        ApiUtils.storeResponseAsJson(FrameworkConstants.responseJsonPath + "response.json", response);
 
         Assertions.assertThat(response.getStatusCode()).isEqualTo(201);
         Assertions.assertThat(response.jsonPath().getString("FavFood.lunch")).isEqualTo("rice");
         Assertions.assertThat(response.jsonPath().getString("FavFood.dinner[0]")).isEqualTo("chapati");
-
     }
+
+
 
     @Test
     @FrameworkAnnotations(authorName = {"sudheer","SVK"},category = {"smoke","Regression"})

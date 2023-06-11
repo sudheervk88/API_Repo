@@ -6,10 +6,6 @@ import io.restassured.config.RestAssuredConfig;
 import io.restassured.http.ContentType;
 import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
-
-import java.util.LinkedHashMap;
-import java.util.Map;
-
 import static io.restassured.RestAssured.given;
 
 public final class JiraUtils {
@@ -20,7 +16,7 @@ public final class JiraUtils {
 
     public static String createIssueInJira(String errorMessage) {
 
-        String replaceIllegal= errorMessage.replaceAll("\n","").replaceAll("\r","").replaceAll("\"","\\\\\"");
+        String replaceIllegal= StringUtils.replaceIllegal(errorMessage);
         String reqBody = ApiUtils.readJsonAsString(FrameworkConstants.jiraJsonPath + "JiraInputData.json").
                 replace("KEY", "TES").
                 replace("SUMMERY", "defect for rest api automation").

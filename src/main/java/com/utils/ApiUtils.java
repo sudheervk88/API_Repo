@@ -2,6 +2,9 @@ package com.utils;
 
 import io.restassured.response.Response;
 import lombok.SneakyThrows;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
 import java.nio.file.Files;
 import java.nio.file.Paths;
 
